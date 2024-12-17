@@ -76,7 +76,7 @@ dutch_address = DutchAddress * (street_address < newline) & (postal_code < white
 
 
 if __name__ == '__main__':
-    example_address = "BANANENSTRAAT 45\n1088 AB KOMKOMMERVILLE"
+    example_address = "TWEEDE BANANENSTRAAT 45\n1088 AB KOMKOMMERVILLE"
 
     print(dutch_address(example_address).result)
 
