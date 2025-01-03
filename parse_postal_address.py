@@ -2,8 +2,7 @@ from dataclasses import dataclass
 from pprint import pprint
 import string
 
-from functional_parsing_library.strings import char, char_in
-from functional_parsing_library.combinators import separated_by, many
+from functional_parsing_library import *
 
 """
 <dutch-address> ::= <street-address> <newline> <postal-code> <whitespace> <city-name>
