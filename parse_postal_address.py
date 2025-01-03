@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from pprint import pprint
 import string
 
 from functional_parsing_library.strings import char, char_in
@@ -76,7 +77,7 @@ dutch_address = DutchAddress * (street_address < newline) & (postal_code < white
 
 
 if __name__ == '__main__':
-    example_address = "TWEEDE BANANENSTRAAT 45\n1088 AB KOMKOMMERVILLE"
+    example_address = "TWEEDE BANANENSTRAAT 67\n1012 AB KOMKOMMERVILLE"
 
-    print(dutch_address(example_address).result)
+    pprint(dutch_address(example_address).result)
 
